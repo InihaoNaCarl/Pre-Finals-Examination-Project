@@ -1,0 +1,169 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 8em 1fr;
+    grid-gap: 0;
+    color: #333; /* Changed for better readability */
+    background-color: #FFF8F9;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 8em;
+    background-color: #F8BBD0;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #E91E63;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #D81B60;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 20px;
+    margin-left: 8em;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #E91E63;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #E91E63;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #F8BBD0;
+    position: relative;
+    color: #FFF;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+th {
+    background-color: #F8BBD0;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F9F9F9;
+}
+
+tr:hover {
+    background-color: #F1F1F1;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px;
+        margin: 0 5px;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 8px;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, ul li {
+        font-size: 14px;
+    }
+}

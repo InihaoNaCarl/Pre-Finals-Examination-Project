@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            text-align: center;
+            border: 1px solid #E91E63;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Navigation</h2>
+        <a href="#about">About Me</a>
+        <a href="#skills">My Skills</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <main>
+        <h1>Carl Steven C. Nadal</h1>
+        <p>Oh hi there! I am passionate about web development and technology. Welcome to my personal portfolio where I share my skills, experience, and talent!:3</p>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Carl, and I love coding, math, and solving problems. Some of my hobbies include reading, hiking, and gaming.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Time Management</li>
+                <li>Physical Abuse</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <table border="1" cellspacing="0" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Company Name</th>
+                        <th>Dates Worked</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cake Decorator</td>
+                        <td>Nadal's Bakery</td>
+                        <td>March 2020 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>Baker Assistant</td>
+                        <td>Nadal's Bakery</td>
+                        <td>March 2020 - Present</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+        <section id="projects" class="projects-section">
+            <h2>My Projects:</h2>
+            <div class="projects-grid">
+                <a href="https://codepen.io/Carl-Steven-Nadal/pen/PoMMYjb" target="_blank" class="project project-tile">
+                    <img class="project-image" src="https://i.imgur.com/hzq5aKQ.png" alt="Project 1" />
+                    <p class="project-title"><span class="code">&lt;</span> JavaScript Calculator <span class="code">&#47;&gt;</span></p>
+                </a>
+                <a href="https://codepen.io/Carl-Steven-Nadal/pen/mybbWzv" target="_blank" class="project project-tile">
+                    <img class="project-image" src="https://i.imgur.com/DnZmE9d.png" alt="Project 2" />
+                    <p class="project-title"><span class="code">&lt;</span> Interactive To-Do List <span class="code">&#47;&gt;</span></p>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                <a href="mailto:carlsteven.nadal@usant.edu.ph">
+                    Email Me
+                </a> <br>
+                <a href="https://github.com/InihaoNaCarl" target="_blank">
+                    GitHub
+                </a> <br>
+                <a href="https://www.instagram.com/carlstevennadal/" target="_blank">
+                    Instagram
+                </a> <br>
+                <a href="tel:+639451289434">
+                    Call Me: +639451289434
+                </a>
+            </p>
+        </section>
+        <footer>
+            <p>Created by Carl Steven C. Nadal &copy; <span id="year"></span></p>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
